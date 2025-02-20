@@ -3,62 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Anel Já Foi Banido?</title>
+    <title>Daily Sequestrada</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
-            text-align: center;
-            background-color: #f4f4f9;
-            color: #333;
-            margin: 0;
             display: flex;
-            flex-direction: column;
             justify-content: center;
             align-items: center;
             height: 100vh;
+            background-color: #f4f4f4;
+            font-family: Arial, sans-serif;
+            text-align: center;
         }
         h1 {
-            font-size: 3rem;
-            margin-bottom: 1rem;
-        }
-        .answer {
-            font-size: 2.5rem;
-            font-weight: bold;
-            color: #ff4d4d;
-            margin-bottom: 2rem;
-        }
-        .timer {
-            font-size: 2rem;
-            color: #555;
+            color: #333;
         }
     </style>
 </head>
 <body>
-    <h1>ANEL JÁ FOI BANIDO?</h1>
-    <div class="answer">NÃO</div>
-    <div class="timer" id="timer">Carregando...</div>
-
-    <script>
-        function updateTimer() {
-            const now = new Date();
-            const nextNoon = new Date();
-            nextNoon.setHours(12, 0, 0, 0);
-            if (now.getHours() >= 12) {
-                nextNoon.setDate(nextNoon.getDate() + 1);
-            }
-
-            const diff = nextNoon - now;
-
-            const hours = Math.floor(diff / (1000 * 60 * 60));
-            const minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
-            const seconds = Math.floor((diff % (1000 * 60)) / 1000);
-
-            document.getElementById('timer').textContent = 
-                `${hours.toString().padStart(2, '0')}:${minutes.toString().padStart(2, '0')}:${seconds.toString().padStart(2, '0')}`;
-        }
-
-        setInterval(updateTimer, 1000);
-        updateTimer();
-    </script>
+    <h1>A daily foi sequestrada e teve um monólogo dela?</h1>
 </body>
 </html>
